@@ -16,7 +16,6 @@ set_target_properties(bulk PROPERTIES
         CXX_STANDART_REQUIRED ON
         COMPILE_OPTIONS -Wpedantic -Wall -Wextra
         )
-
 install(TARGETS bulk RUNTIME DESTINATION bin)
 set(CPACK_GENERATOR DEB)
 set(CPACK_PACKAGE_VERSION_MAJOR "${PROJECT_VERSION_MAJOR}")
@@ -24,6 +23,4 @@ set(CPACK_PACKAGE_VERSION_MINOR "${PROJECT_VERSION_MINOR}")
 set(CPACK_PACKAGE_VERSION_PATCH "${PROJECT_VERSION_PATCH}")
 set(CPACK_PACKAGE_CONTACT nikita1993chizh@gmail.com)
 include(CPack)
-enable_testing()
-
 enable_testing()
